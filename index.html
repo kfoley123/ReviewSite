@@ -3,23 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Basic Page with text Submission</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<style>
-</style>
-<script src=""></script>
 <body>
+    <script src="script.js" defer></script>
 
-<img src="img_la.jpg" alt="LA" style="width:100%">
+    <h1>Submitting some text input!!</h1>
 
-<div class="">
- <h1>This is a Heading</h1>
- <p>This is a paragraph.</p>
- <p>This is another paragraph.</p>
-</div>
-<body>
-    
+    <form id="myForm" action="/submit" method="post" class="submissionForm">
+        <div class="inputContainer">
+            <label for="fNameField">First name:</label>
+        <input type="text" id="fNameField" name="fNameField" required>
+        </div>
+        
+        <div class="inputContainer">
+            <label for="lNameField">Last name:</label>
+        <input type="text" id="lNameField" name="lNameField" required>
+        </div>
+        
+        <div class="inputContainer">
+            <label for="emailField">Email:</label>
+            <input type="text" id="emailField" name="emailField" required>
+        </div>
+       
+        <div class="inputContainer">
+            <label for="inputField">Enter message:</label>
+            <input type="text" id="inputField" name="inputField" required>
+
+        </div>
+
+       
+        
+        <button class="submit" id="submit" type="submit">Submit</button>
+    </form>
+
 </body>
 </html>
+
+
+
+
+
+
