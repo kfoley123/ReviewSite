@@ -3,14 +3,19 @@
 <head>
     <title>Contact</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+</head>
+
+<body  style="background-color: #282d41">
+
+    <!-- NavBar -->
+    <nav style="z-index: 1000;" class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#index.html"><div style="max-width: 60px;">
-                <img style="width: 100%;" src="../images/mothman.png">
-              </div></a>
+            <a class="navbar-brand" href="index.html">
+                <div style="max-width: 60px;">
+                    <img style="width: 100%;" src="../images/mothman.png" alt="Mothman Logo">
+                </div>
+            </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -29,7 +34,11 @@
           </div>
         </div>
       </nav>
-    <h1>Send a GET Request</h1>
+      
+    <!-- Contact Form  -->
+   
+    <!-- <div>
+        <h1>Contact Us</h1>
     <form action="process_get_database.php" method="get">
         
         <div class="inputContainer">
@@ -49,5 +58,87 @@
 
         <input type="submit" value="Submit">
     </form>
+
+    </div> -->
+
+  <!-- This was a really cool firefly effect I took directly from https://github.com/garrettallen/fireflies/blob/gh-pages/fireflies.js but whenever I used it none of the elements on the page would work :( -->
+  <!-- <script defer src='../script.js'></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(function () {
+                fireFlies({ "number_flies": 200, "color": "#FCD271" });
+            }, 5000);
+        });
+    </script> -->
+
+
+    <!-- container for CONTACT BODY -->
+    <div style="z-index: 1000;"  class="container-fluid w100 d-flex flex-column p-5">
+
+
+   <!-- container for CONTACT BODY -->
+<div class="d-flex align-items-center justify-content-center flex-column vh-50">
+    <!-- HEADING -->
+    <div class="pb-2">
+        <h1 class="text-white text-uppercase">Contact a Cryptid today!</h1>
+    </div>
+
+    <!-- CONTAINER FOR FORM -->
+    <div  class="p-3 border rounded">
+        <!-- INNER FORM -->
+        <form action="process_get_database.php" method="get" class="text-white  needs-validation">
+            <div class="row">
+                <!-- NAME INPUT -->
+                <div class="col-md-6 mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Enter your first and last name" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <!-- EMAIL INPUT -->
+                <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+            </div>
+
+            <!-- MESSAGE INPUT -->
+            <div class="mb-3 text-white">
+                <label for="message" class="form-label">Message</label>
+                <div class="input-group has-validation">
+                    <textarea class="form-control" name="message" id="message" rows="3" placeholder="Enter your message" required></textarea>
+                    <div class="invalid-feedback">
+                        Please enter a message.
+                    </div>
+                </div>
+            </div>
+
+            <!-- LIABILITY -->
+            <div class="mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        CryptidContacts is not responsible for death or injury resulting from communications with cryptids.
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUBMIT BUTTON -->
+            <div>
+                <button class="btn border btn-dark" type="submit">Submit form</button>
+            </div>
+        </form>
+        <!-- INNER FORM END -->
+    </div>
+    <!-- CONTAINER END FOR FORM -->
+</div>
+    
 </body>
 </html>
