@@ -8,30 +8,143 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body style="background-color: #1a3f2a" >
+
+
+<body style="background-color: #283113" >
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">About</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
+
+    <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <div style="max-width: 60px;">
+                <img style="width: 100%;" src="../images/mothman.png" alt="Mothman Logo">
+            </div>
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+      <!-- Carousel -->
+      <div class="container-fluid  pt-5 w-50">
+        <div id="carouselAbout" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+                <!-- Carousel Inner-->
+            <div class="carousel-inner">
+                 <!--item1-->
+              <div class="carousel-item active">
+                <img src="../images/bigfoot.png" class="d-block w-100" alt="cute cartoon bigfoot cartoon">
+                <div class="carousel-caption text-success d-none d-md-block">
+                  <div class="text-success rounded text-bg-dark">
+                    <h5>Bigfoot</h5>
+                    <p>(Actual likeness may vary)</p>
+                  </div>
+                </div>
+              </div>
+                 <!--item2-->
+              <div class="carousel-item">
+                <img src="../images/chupacabra.png" class="d-block w-100" alt="cute chupacabra cartoon">
+                <div class="carousel-caption  d-none d-md-block">
+                  <div class="text-success rounded text-bg-dark">
+                    <h5>Chupacabra</h5>
+                    <p>(Actual likeness may vary)</p>
+                  </div>
+                </div>
+              </div>
+                 <!--item3-->
+              <div class="carousel-item">
+                <img src="../images/wolfman.png" class="d-block w-100" alt="cute wolfman cartoon">
+                <div class="carousel-caption text-success d-none d-md-block">
+                  <div class="text-success rounded text-bg-dark">
+                    <h5>Wolfman</h5>
+                    <p>(Actual likeness may vary)</p>
+                  </div>
+                </div>
+              </div>
+                <!--item4-->
+                <div class="carousel-item">
+                  <img src="../images/yeti.png" class="d-block w-100" alt="cute yeti cartoon">
+                  <div class="carousel-caption text-success d-none d-md-block">
+                    <div class="text-success rounded text-bg-dark">
+                      <h5>Yeti</h5>
+                      <p>(Actual likeness may vary)</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+               <!-- Carousel Inner End-->
           </div>
+      </div>
+
+
+      <!-- https://getbootstrap.com/docs/4.0/components/carousel/ -->
+      <!-- https://getbootstrap.com/docs/4.0/content/typography/  -->
+
+          <!-- Testimonials-->
+
+      <div class="container-fluid d-flex justify-content-center flex-column align-items-center pt-5 ">
+        <div>
+          <h2 class="mb-3 text-white"> Testimonials </h2>
         </div>
-      </nav>
 
-   
 
-   
-    
+         <div class="row row-cols-1 row-cols-md-2 g-4 d-flex justify-content-center">
+          <div class=" col row card m-3" style="width: 18rem;">
+            <img class="card-img-top" src="../images/happyCustomer.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">"I asked Mothman what his favourite color is... and now he's my boyfriend!" -Linda Smith, CryptidContacts user.</p>
+            </div>
+          </div>
+
+          <div class=" col row card m-3" style="width: 18rem;">
+            <img class="card" src="../images/happycustomerMale.avif" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">"Big Foot is my best friend and he helped me move last week!" -Joel Hart, CryptidContacts user.</p>
+            </div>
+          </div>
+
+          <div class=" col row card m-3" style="width: 18rem;">
+            <img class="card-img-top" src="../images/happycustomer3.webp" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">"The Loch Ness Monster and I are on a first name basis!"" -Abby Croft, CryptidContacts user.</p>
+            </div>
+          </div>
+
+
+          <div class=" col row card m-3" style="width: 18rem;">
+            <img class="card-img-top" src="../images/happyCustomer4.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">"The Loch Ness Monster and I are on a first name basis!"" -Abby Croft, CryptidContacts user.</p>
+            </div>
+          </div>
+
+          <!-- https://getbootstrap.com/docs/5.0/components/card/#grid-cards-->
+
+         </div>
+
+      </div>
+        
+     
+         
 </body>
 </html>
